@@ -15,13 +15,14 @@ This paper aims to find a point **z** in the latent space that corresponds to an
 3. Compute Anomaly score *A*(**x**)
 
 ## Loss functions of AnoGAN
-- Anomaly score
-- Residual Loss
-- Disrimination Loss
-
+![loss](AnoGAN_paper/imgs/loss.jpg)
+The Total Loss to find latent variable **z** is defined by a weighted sum of *Residual Loss* and *Discrimination Loss*.
+- Residual Loss : Measures L1 distance of the **visual similarity** between qeury image and generated image in the image space.
+- Discrimination Loss : Measures L1 distance of the **feature similarity** between qeury image and generated image in the feature representation of the discriminator.(Enforces the generated image to lie on the manifold by using the trained discriminator not as classifier, but as a **feature extractor**)
 
 # references
 - [Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery](https://arxiv.org/pdf/1703.05921.pdf)
 - [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
 - https://github.com/GunhoChoi/AnoGAN-Pytorch
 - https://github.com/seokinj/anoGAN
+- https://github.com/tkwoo/anogan-keras
