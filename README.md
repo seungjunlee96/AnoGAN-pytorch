@@ -26,3 +26,4 @@ The Total Loss to find latent variable **z** is defined by a weighted sum of *Re
 - https://github.com/GunhoChoi/AnoGAN-Pytorch
 - https://github.com/seokinj/anoGAN
 - https://github.com/tkwoo/anogan-keras
+- http://incredible.ai/deep-learning/2018/02/17/AnoGAN/
